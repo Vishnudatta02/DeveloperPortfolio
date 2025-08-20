@@ -34,46 +34,38 @@ const Projects = () => {
       description: "A full-stack application with JWT authentication, React frontend and Spring Boot backend to manage donation records efficiently.",
       image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       tags: ["Java", "React", "Spring Boot", "MySQL"],
-      codeLink: "https://github.com/rVishnuDatta/JFSD-project",
+      codeLink: "https://github.com/Vishnudatta02/JFSD-project",
       period: "Aug 2024 - Nov 2024",
-      featured: true
+      featured: false
     },
     {
       title: "Tender Management System",
       description: "A system for managing tenders and bids using Java and JSP, enhancing bid management efficiency by 45%.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       tags: ["JSF", "EJB", "JPA", "MySQL"],
-      codeLink: "https://github.com/rVishnuDatta/Tender_management_system",
+      codeLink: "https://github.com/Vishnudatta02/Tender_management_system",
       period: "Jun 2024 - Jul 2024",
       featured: false
     },
     {
-      title: "Online Donation Management System",
+      title: "Blood Donation Management System",
       description: "A Django-based system for tracking donations, improving efficiency by 55% and reducing manual record-keeping errors.",
       image: "https://images.unsplash.com/photo-1607703703520-bb638e84caf2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       tags: ["Django", "Python", "PostgreSQL", "HTML/CSS"],
-      codeLink: "https://github.com/rVishnuDatta/Donation_Management",
+      codeLink: "https://github.com/Vishnudatta02/Blood_Donation_Management",
       period: "Dec 2023 - Apr 2024",
-      featured: true
+      featured: false
     },
     {
       title: "Service Management System",
       description: "A MERN stack application for service request tracking that improved efficiency by 60% and reduced processing time.",
       image: "https://media.istockphoto.com/id/1695598546/photo/businessman-using-tablet-to-transfer-data-on-cloud-computing-seamless-data-transfer-and.jpg?s=1024x1024&w=is&k=20&c=fpZGq8Q-fYvcq70cD4ebV88vanWfi0hCKOfEMkBPJPc=",
       tags: ["MongoDB", "Express", "React", "Node.js"],
-      codeLink: "https://github.com/rVishnuDatta/Service_Management",
+      codeLink: "http://github.com/Vishnudatta02/Service_Management",
       period: "Aug 2023 - Nov 2023",
       featured: false
     },
-    {
-      title: "Personal Portfolio",
-      description: "An interactive portfolio website built with React and Tailwind CSS showcasing my projects, skills, and achievements in web development.",
-      image: "https://images.unsplash.com/photo-1545665277-5937489579f2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      tags: ["React", "Tailwind CSS", "JavaScript", "HTML5"],
-      codeLink: "https://github.com/rVishnuDatta/Personal_portfolio",
-      period: "Jan 2024 - Feb 2024",
-      featured: true
-    }
+   
   ];
 
   return (

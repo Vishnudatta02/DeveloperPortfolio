@@ -252,7 +252,7 @@ const Contact = () => {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://github.com/rVishnuDatta"
+                  href="https://github.com/Vishnudatta02"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-gray-800 text-blue-400 hover:bg-gray-700 transition-colors hover:-translate-y-1 transform duration-300"

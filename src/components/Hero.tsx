@@ -28,7 +28,7 @@ const Hero = () => {
               Welcome to my portfolio
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Hi, I'm <span className="text-blue-400">Vishnu Datta</span>
+              Hi, I'm <span className="text-blue-400">Botlapati Vishnudatta</span>
               <br />
               <span className="text-gradient">
                 Full Stack Developer
@@ -65,7 +65,7 @@ const Hero = () => {
             <div className="relative w-full h-full overflow-hidden rounded-full border-4 border-gray-800/50 shadow-xl">
               <div className="absolute inset-0 bg-gray-800 animate-pulse"></div>
               <img
-                src="/images/698c2f6f-f37f-4301-b93c-977a61e5b174.png"
+                src="\images\vishnu-profile pic.jpg"
                 alt="Vishnu Datta Portrait"
                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
                 onLoad={(e) => (e.currentTarget.style.opacity = "1")}

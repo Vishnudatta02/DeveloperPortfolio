@@ -199,15 +199,14 @@ const About = () => {
     }
   ];
 
-  // Create a skills categories map for better organization
-  const skillCategories = {
-    "Programming Language": "bg-purple-500/15 border-purple-500/30 hover:bg-purple-500/25",
-    "Frontend": "bg-blue-500/15 border-blue-500/30 hover:bg-blue-500/25",
-    "Backend": "bg-green-500/15 border-green-500/30 hover:bg-green-500/25",
-    "Database": "bg-orange-500/15 border-orange-500/30 hover:bg-orange-500/25",
-    "Tool": "bg-pink-500/15 border-pink-500/30 hover:bg-pink-500/25",
+  // Skill categories with colors
+  const skillCategories: Record<string, string> = {
+    "Programming Language": "bg-purple-500/15 border-purple-500/30 hover:bg-purple-500/25 text-purple-300",
+    "Frontend": "bg-blue-500/15 border-blue-500/30 hover:bg-blue-500/25 text-blue-300",
+    "Backend": "bg-green-500/15 border-green-500/30 hover:bg-green-500/25 text-green-300",
+    "Database": "bg-orange-500/15 border-orange-500/30 hover:bg-orange-500/25 text-orange-300",
+    "Tool": "bg-pink-500/15 border-pink-500/30 hover:bg-pink-500/25 text-pink-300",
   };
-
 
   return (
     <section id="about" ref={sectionRef} className="py-20 relative">
@@ -227,7 +226,8 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          {/* Left Side - About */}
+          <div className={`transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <div className="glass-panel p-8 rounded-2xl shadow-sm">
               <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
               <div className="space-y-4 text-gray-400">
@@ -265,7 +265,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          {/* Right Side - Skills + Education */}
+          <div className={`transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <div className="glass-panel p-8 rounded-2xl shadow-sm">
               <h3 className="text-2xl font-bold mb-6">My Skills</h3>
               
@@ -274,7 +275,7 @@ const About = () => {
                 {Object.entries(skillCategories).map(([category, className]) => (
                   <div 
                     key={category} 
-                    className={`px-3 py-1.5 rounded-full text-sm font-medium ${className.split(' ')[0]} ${className.split(' ')[1]} border border-blue-500/20`}
+                    className={`px-3 py-1.5 rounded-full text-sm font-medium border ${className}`}
                   >
                     {category}
                   </div>
@@ -288,10 +289,8 @@ const About = () => {
                     href={skill.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="skill-card"
-                    style={{ 
-                      animationDelay: `${index * 50}ms`,
-                    }}
+                    className={`skill-card border ${skillCategories[skill.category]} transition-all`}
+                    style={{ animationDelay: `${index * 50}ms` }}
                   >
                     <img 
                       src={skill.icon} 
@@ -308,6 +307,7 @@ const About = () => {
                 ))}
               </div>
 
+              {/* Education */}
               <div className="mt-12">
                 <h4 className="text-lg font-semibold mb-4">Education</h4>
                 <div className="space-y-8">
@@ -318,7 +318,7 @@ const About = () => {
                       style={{ 
                         animationDelay: `${index * 200}ms`,
                         opacity: isVisible ? 1 : 0,
-                        transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+                        transform: isVisible ? "translateY(0)" : "translateY(20px)",
                         transition: `all 0.6s ease-out ${index * 150}ms`
                       }}
                     >
@@ -368,6 +368,7 @@ const About = () => {
                   ))}
                 </div>
               </div>
+
             </div>
           </div>
         </div>
