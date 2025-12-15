@@ -5,7 +5,9 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* Warm Charcoal -> Rust Accent palette */
+    --bg-start: 210 9% 9%; /* warm charcoal (very dark) */
+    --bg-end: 18 55% 26%;  /* rust accent (muted warm orange) */
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -98,7 +100,10 @@
 
   body {
     @apply bg-background text-foreground;
-    background-color: #0a1020;
+    /* Warm diagonal gradient for a more personal, warm feel */
+    background: linear-gradient(135deg, hsl(var(--bg-start)) 0%, hsl(var(--bg-end)) 100%);
+    /* fallback color for very old browsers */
+    background-color: hsl(var(--bg-start));
     color: #ffffff;
   }
 }
@@ -120,8 +125,9 @@
 }
 
 .glass-panel {
-  background: rgba(13, 25, 48, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* Slightly darker, warmer glass to contrast the rust-accent background */
+  background: rgba(20, 18, 18, 0.56);
+  border: 1px solid rgba(255, 200, 170, 0.05);
   backdrop-filter: blur(12px);
   border-radius: 16px;
 }
