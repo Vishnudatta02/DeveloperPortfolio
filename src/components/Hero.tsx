@@ -46,7 +46,7 @@ const Hero = () => {
                 Contact Me
               </a>
               <a
-                href="https://drive.google.com/file/d/1BF4CDrGNF1sWh53qEmLuW3UHYuy8MG5n/view?usp=sharing"
+                href="https://drive.google.com/file/d/1PVj8lCwfpKY5tHgSggMAmlXeCTxgIOsb/view?usp=sharing"
                 className="inline-flex items-center justify-center h-12 px-8 font-medium tracking-wide transition duration-300 bg-transparent border border-blue-600 text-blue-400 hover:bg-blue-900/20 rounded-lg focus:shadow-outline focus:outline-none"
               >
                 <FileDown className="w-5 h-5 mr-2" />
@@ -65,7 +65,7 @@ const Hero = () => {
             <div className="relative w-full h-full overflow-hidden rounded-full border-4 border-gray-800/50 shadow-xl">
               <div className="absolute inset-0 bg-gray-800 animate-pulse"></div>
               <img
-                src="\images\vishnu-profile pic.jpg"
+                src="\images\vishnu_dp.jpg"
                 alt="Vishnu Datta Portrait"
                 className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
                 onLoad={(e) => (e.currentTarget.style.opacity = "1")}

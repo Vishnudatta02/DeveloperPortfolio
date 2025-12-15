@@ -84,8 +84,15 @@ const Certifications = () => {
       link: "https://drive.google.com/file/d/1EnoZ8yke4H6VZt2bErttEwXPoBBR7ARj/view?usp=sharing", // Removed the # character
       color: "from-orange-400 to-red-500",
     },
+    {
+      title: "Wipro Talent Next",
+      issuer: "Wipro",
+      icon: <GraduationCap className="w-6 h-6" />,
+      link: "https://drive.google.com/file/d/1oSnuwG_ch-TN1GuipwX0400Wewn4y3i6/view?usp=sharing", // Removed the # character
+      color: "from-green-400 to-emerald-600",
+    },
   ];
-
+removeEventListener
   return (
     <section id="certifications" ref={sectionRef} className="py-20 relative">
       <div className="absolute top-0 left-0 w-72 h-72 bg-purple-500/5 rounded-full filter blur-3xl -z-10 opacity-70"></div>
